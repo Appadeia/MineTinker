@@ -18,6 +18,10 @@
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
     </repositories>
     <dependencies>
         <dependency>
@@ -28,7 +32,7 @@
         </dependency>
         <dependency>
             <groupId>org.bukkit</groupId>
-            <artifactId>craftbukkit</artifactId>
+            <artifactId>bukkit</artifactId>
             <version>1.13.2-R0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -36,6 +40,16 @@
             <artifactId>annotations</artifactId>
             <version>RELEASE</version>
             <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.github.TheBusyBiscuit</groupId>
+            <artifactId>Slimefun4</artifactId>
+            <version>v4.1.15</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.TheBusyBiscuit</groupId>
+            <artifactId>CS-CoreLib</artifactId>
+            <version>v1.5.18</version>
         </dependency>
     </dependencies>
 </project>

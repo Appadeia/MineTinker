@@ -6,6 +6,7 @@ import de.flo56958.MineTinker.Data.Lists;
 import de.flo56958.MineTinker.Listeners.*;
 import de.flo56958.MineTinker.Modifiers.ModManager;
 import de.flo56958.MineTinker.Modifiers.Types.Power;
+import de.flo56958.MineTinker.SlimefunCompat.SlimefunCompat;
 import de.flo56958.MineTinker.Utilities.ChatWriter;
 import de.flo56958.MineTinker.Utilities.ConfigurationManager;
 import de.flo56958.MineTinker.Utilities.Updater;
@@ -85,6 +86,9 @@ public class Main extends JavaPlugin {
                     updater.checkForUpdate();
                 }
             }.runTaskLater(Main.getPlugin(), 20);
+        }
+        if (getServer().getPluginManager().getPlugin("Slimefun") != null) {
+            SlimefunCompat.setupSfRecipes();
         }
     }
 
